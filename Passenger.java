@@ -1,8 +1,16 @@
 public class Passenger {
     
-    private String name;
+    private String passenger;
 
-    public Passenger(String name) {
-        this.name = name;
+    //public Passenger(String passenger) {
+      
+   // }
+
+    public void boardCar(Car car) {
+        car.addPassenger(passenger);
+    }
+
+    public void getOffCar(Car car) {
+        car.removePassenger(passenger);
     }
 }
